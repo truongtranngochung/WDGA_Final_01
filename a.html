@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input type="text" id="num1">
+<input type="text" id="num2">
+<button onclick="Sum()">SUM</button>
+<script type="text/javascript">
+	function Sum(){
+		var a=parseInt(document.getElementById("num1").value);
+		var b=parseInt(document.getElementById("num2").value);
+		if (isNaN(a) || isNaN(b)){
+			alert("Check your value!");
+		}else{
+			var c=a+b;
+			alert(c);
+		}
+	}
+</script>
+</body>
+</html>
