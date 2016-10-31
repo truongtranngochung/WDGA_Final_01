@@ -1,0 +1,9 @@
+<ul ng-controller="huongDanEntriesController">
+		<li class="well" ng-repeat="entry in Entries">
+			<p><a href="#/huongDan/{{entry.id}}">{{entry.text}} </a></p>
+			
+			<div ng-repeat="comment in entry.comments">
+				<p>{{comment.text}}</p>
+			</div>
+		</li>
+	<ul>
